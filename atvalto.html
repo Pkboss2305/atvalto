@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Átváltó</title>
+    <link rel="stylesheet" href="atvalto.css">
+    <script>
+        var a;
+    </script>    
 </head>
 <body>
-    
+    <input type="text" id="input" onchange="">
+    <button onclick="var a = document.getElementById('input').innerHTML; var text = a.toString(2);document.getElementById('parag').innerHTML = text">csinaldkutya</button>
+    <p id="parag"></p>
 </body>
 </html>
