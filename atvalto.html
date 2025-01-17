@@ -17,6 +17,11 @@
     <div id="container">
     <h1>Átváltó</h1>
     <input type="number" id="input"><br>
+    <select name="rendszerek" id="system">
+        <option value="Kettes">Bináris számrendszer</option>
+        <option value="Nyolcas">Oktális számrendszer</option>
+        <option value="Tizenhatos">Hexadecimális számrendszer</option>
+    </select>
     <button onclick="var a = document.getElementById('input').value; var text = convert(a,2);document.getElementById('parag').innerHTML = text">Átváltás</button>
     <p id="parag"></p>
     </div>
