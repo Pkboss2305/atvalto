@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="atvalto.css">
     <script>
         var a;
+        function convert(value, base) {
+            return parseInt(value).toString(base);
+        }
     </script>    
 </head>
-<body>
+<body onload="document.getElementById('input').focus()"> 
+    
     <div id="container">
-    <input type="text" id="input" onchange="">
-    <button onclick="var a = document.getElementById('input').innerText; var text = convert(a,2);document.getElementById('parag').innerHTML = text">csinaldkutya</button>
+    <h1>Átváltó</h1>
+    <input type="number" id="input"><br>
+    <button onclick="var a = document.getElementById('input').value; var text = convert(a,2);document.getElementById('parag').innerHTML = text">Átváltás</button>
     <p id="parag"></p>
     </div>
 </body>
