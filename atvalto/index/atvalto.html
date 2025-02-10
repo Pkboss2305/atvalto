@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Átváltó</title>
+    <link rel="stylesheet" href="atvalto.css">
+    <script src="atvalto.js"></script> 
+</head>
+<body onload="document.getElementById('input').focus()"> 
+    <div id="navbar">
+        <div id="navbinar"><a href="../binaris/binaris.html">A bináris(2-es) számrendszer</a></div>
+        <div id="navoktal"><a href="../oktalis/oktalis.html">Az oktális(8-as) számrendszer</a></div>
+        <div id="navhexa"><a href="../hexadecimalis/hexadecimalis.html">A hexadecimális(16-os) számrendszer</a></div>
+    </div>
+<h1>Számrendszer átváltó</h1>
+<div id="atvalto">
+    <input type="number" id="input"><br>
+    <select name="rendszerek" id="system" onchange="szrend = document.getElementById('system').value">
+        <option id="2" value="2">Bináris számrendszer</option>
+        <option id="8" value="8">Oktális számrendszer</option>
+        <option id="16" value="16" >Hexadecimális számrendszer</option>
+    </select>
+    <button onclick="szam = document.getElementById('input').value; var text = convert(szam,szrend);document.getElementById('parag').innerHTML = text" id="atvaltas">átváltás</button>
+    <p id="parag"></p>
+</div>
+</body>
+</html>
