@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(90deg, rgba(6,0,96,1) 0%, rgba(0,0,255,1) 43%, rgba(0,212,255,1) 100%);
+    margin: auto;
+    align-items: center;
+    color: whitesmoke;
+    padding:0.5vw;
+}
+h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3em;
+    }
+    #navatvalto,#navoktal,#navhexa{
+        font-size:0.8em ;    
+    }
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1vw solid black;
+    padding: 1vw;
+    color: whitesmoke;
+}
+#navatvalto,#navbinaris,#navhexa{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 0.6vw;
+    border-radius: 1vw;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    border-radius: 0.3vw;
+    padding: 0.2vw;
+}

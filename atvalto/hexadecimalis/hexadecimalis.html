@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A bináris számrendszer</title>
+    <link rel="stylesheet" href="hexadecimalis.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navatvalto"><a href="../index/atvalto.html">Vissza az átváltóhoz</a></div>
+        <div id="navoktal"><a href="../binaris/binaris.html">Az bináris(2-es) számrendszer</a></div>
+        <div id="navhexa"><a href="../oktalis/oktalis.html">A oktalis(8-as) számrendszer</a></div>
+    </div>
+    <h1>A hexadecimális számrendszer</h1>
+    <h2>Átváltás a számrendszerbe</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta excepturi nostrum, provident nulla perspiciatis doloremque animi velit deleniti quas est deserunt sint debitis nam harum praesentium officiis nobis possimus ad alias, eius rem dolore facere blanditiis! Ducimus quia explicabo deleniti, eveniet asperiores aliquam, blanditiis, ipsum hic veritatis illo aut assumenda pariatur vero. Molestias magni inventore, officiis laborum quae molestiae magnam, ex corporis quo ducimus libero, laudantium praesentium quod non delectus placeat voluptatum nulla! Rerum itaque corrupti vel! Amet ad labore optio maiores minus quasi debitis quas, eligendi, totam similique a alias culpa quibusdam commodi earum delectus, placeat natus. Iste, ratione.
+    <h2>Gyakorlati példák</h2>
+    <div id="feladatok">
+        <div id="feladat">
+            <h3>1. Feladat</h3>
+            <p>Váltsd át a következő számot a hexadecimális megfelelőjére: <b>16</b></p>
+            <input id="feladat_inp1" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById(feladat_inp1).value,16)) document.getElementById">Ellenőrzés</button>            
+        </div>
+        <div id="feladat">
+            <h3>2. Feladat</h3>
+            <p>Váltsd át a következő számot a hexadecimális megfelelőjére: <b>57</b></p>
+            <input id="feladat_inp2" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById(feladat_inp2).value,57)) document.getElementById">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>3. Feladat</h3>
+            <p>Váltsd át a következő számot a hexadecimális megfelelőjére: <b>142</b></p>
+            <input id="feladat_inp3" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById(feladat_inp3).value,142)) document.getElementById">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>4. Feladat</h3>
+            <p>Váltsd át a következő számot a hexadecimális megfelelőjére: <b>1139</b></p>
+            <input id="feladat_inp4" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById(feladat_inp4).value,1139)) document.getElementById">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>5. Feladat</h3>
+            <p>Váltsd át a következő számot a hexadecimális megfelelőjére: <b>75681</b></p>
+            <input id="feladat_inp5" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp5').value,75681) == true){document.getElementById('feladat_inp5').style.backgroundColor = rgba(0,255,0,0.5)} else{document.getElementById('feladat_inp5').style.backgroundColor = rgba(255,0,0,0.5)}">Ellenőrzés</button>
+        </div>
+    </div>
+</body>
+</html>
