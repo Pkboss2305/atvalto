@@ -5,15 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Az oktális számrendszer</title>
     <link rel="stylesheet" href="oktalis.css">
+    <script src="oktalis.js"></script>
 </head>
-<body>
+<body onload="console.log((16).toString(8));console.log((57).toString(8));console.log((142).toString(8));console.log((1139).toString(8));console.log((75681).toString(8))"> 
     <div id="navbar">
         <div id="navatvalto"><a href="../index/atvalto.html">Vissza az átváltóhoz</a></div>
         <div id="navbinaris"><a href="../binaris/binaris.html">Az bináris(2-es) számrendszer</a></div>
-        <div id="navhexa"><a href="../hexadecimalis/hexadecimalis.html">A hexadecimális(16-os) számrendszer</a></div>
+        <div id="navhexa"><a href="../hexadecimalis/hexadecimalis.html">A hexadecimalis(16-os) számrendszer</a></div>
     </div>
     <h1>Az oktális számrendszer</h1>
-    <h2>Átváltás a számrendszerbe</h2>
-    <h2>Gyakorlati példák</h2>
+    <h2>Átváltás a számrendszerbe:</h2>
+    
+    <p>Az oktális számrendszer a 8-as számrendszer. Az Unix és a rajta alapuló operációs rendszerekben a felhasználói jogokat egy nyolcas számrendszerbeli jeggyel ábrázolják, Digitális kijelzőkön is alkalmazzák.</p>
+    <ol>
+        <li>Osszuk el a számot maradékosan 8-al és írjuk le a maradékot</li>
+        <li>Ismételjuk az első lépést amíg 0-át nem kapunk</li>
+        <li>Írjuk le a maradékokat fordított sorrendben</li>
+    </ol>
+    <h2>Gyakorlati példák:</h2>
+    <div id="feladatok">
+        <div id="feladat">
+            <h3>1. Feladat</h3>
+            <p>Váltsd át a következő számot az oktális megfelelőjére: <b>16</b></p>
+            <input id="feladat_inp1" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp1').value,16) == true){document.getElementById('feladat_inp1').style.backgroundColor = '#8CBA80';} else{document.getElementById('feladat_inp1').style.backgroundColor = 'rgba(255,0,0,0.8)'}">Ellenőrzés</button>            
+        </div>
+        <div id="feladat">
+            <h3>2. Feladat</h3>
+            <p>Váltsd át a következő számot az oktális megfelelőjére: <b>57</b></p>
+            <input id="feladat_inp2" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp2').value,57) == true){document.getElementById('feladat_inp2').style.backgroundColor = '#8CBA80';} else{document.getElementById('feladat_inp2').style.backgroundColor = 'rgba(255,0,0,0.8)'}">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>3. Feladat</h3>
+            <p>Váltsd át a következő számot az oktális megfelelőjére: <b>142</b></p>
+            <input id="feladat_inp3" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp3').value,142) == true){document.getElementById('feladat_inp3').style.backgroundColor = '#8CBA80';} else{document.getElementById('feladat_inp3').style.backgroundColor = 'rgba(255,0,0,0.8)'}">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>4. Feladat</h3>
+            <p>Váltsd át a következő számot az oktális megfelelőjére: <b>1139</b></p>
+            <input id="feladat_inp4" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp4').value,1139) == true){document.getElementById('feladat_inp4').style.backgroundColor = '#8CBA80';} else{document.getElementById('feladat_inp4').style.backgroundColor = 'rgba(255,0,0,0.8)'}">Ellenőrzés</button>
+        </div>
+        <div id="feladat">
+            <h3>5. Feladat</h3>
+            <p>Váltsd át a következő számot az oktális megfelelőjére: <b>75681</b></p>
+            <input id="feladat_inp5" type="text">
+            <br>
+            <button id="ellenorzes" onclick="if(check(document.getElementById('feladat_inp5').value,75681) == true){document.getElementById('feladat_inp5').style.backgroundColor = '#8CBA80';} else{document.getElementById('feladat_inp5').style.backgroundColor = 'rgba(255,0,0,0.8)'}">Ellenőrzés</button>
+        </div>
+    </div>
 </body>
 </html>
